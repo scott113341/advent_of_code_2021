@@ -12,4 +12,4 @@ jobs:
       - name: Run tests
         run: cargo test --release
       - name: Run
-        run: "ls -d day_* | xargs -I '{}' cargo run --release --bin '{}'"
+        run: "ls -d day_* | xargs -I '{}' cargo run --release --quiet --bin '{}'"
